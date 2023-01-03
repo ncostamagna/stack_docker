@@ -123,4 +123,12 @@ docker exec ubuntu10 uname -a
 
 ```
 
+### attach
+
+Me asocio al comando que se esta ejecutando en el contenedor, como si fuera bash, me meto a lo ultimo que se ejecuta
+
+# Redes
+
+# Volumenes
+
 # Docker Compose

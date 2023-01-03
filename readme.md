@@ -94,4 +94,33 @@ docker stop <container id>
 docker kill <container id>
 ```
 
+### borrar
+
+```sh
+docker rm <container id>
+
+docker rmi <imagen id>
+
+```
+
+### Tags
+
+Una etiqueta que le da a la imagen y que le da un sentido, por lo general se le coloca una version
+
+```sh
+
+# alpine es la version
+docker run -d httpd:alpine
+```
+
+### exec
+
+Mandar comandos que se ejecuten en un contenedor
+
+```sh
+# ejecuto el comando uname -a en el contenedor ubuntu10
+docker exec ubuntu10 uname -a
+
+```
+
 # Docker Compose

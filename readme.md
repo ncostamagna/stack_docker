@@ -127,7 +127,26 @@ docker exec ubuntu10 uname -a
 
 Me asocio al comando que se esta ejecutando en el contenedor, como si fuera bash, me meto a lo ultimo que se ejecuta
 
+### cp
+
+Copio archivos o directorios de mi local al docker
+
+```sh
+# copio todo el contenido donde estoy ahora al directorio /usr/local/apache2/htdocs del contenedor apache2
+docker cp . apache2:/usr/local/apache2/htdocs
+```
+
 # Redes
+
+## Puertos
+
+POr defecto los dockers son privados, para acceder a ciertas aplicaicones. Podemos hacerlos publicos y mapearlos con algun puerto del host.
+Por ejemplo si tengo un container que tiene un tomcat escuchando en el puerto 80, tengo que mapear el 80 con un puerto 8080 (por ejemplo), para poder acceder fuera del docker.
+
+```sh
+# redirijo del puerto 80 al 8080, voy a entrar desde la web al puerto 8080
+docker run -d -p 8080:80 my-apache2
+```
 
 # Volumenes
 

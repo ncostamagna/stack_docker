@@ -145,7 +145,10 @@ Por ejemplo si tengo un container que tiene un tomcat escuchando en el puerto 80
 
 ```sh
 # redirijo del puerto 80 al 8080, voy a entrar desde la web al puerto 8080
-docker run -d -p 8080:80 my-apache2
+docker run -d -p 8080:80 httpd
+
+# mapeo con un puerto random, genero uno automatico
+docker run -d -P nginx
 ```
 
 # Volumenes

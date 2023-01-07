@@ -151,6 +151,26 @@ docker run -d -p 8080:80 httpd
 docker run -d -P nginx
 ```
 
+## Network
+
+```sh
+doker notework ls
+
+docker network inspect bridge
+```
+
+### Bridge
+
+Maquinas privadas adentro de una maquina que se puedan conectar, se genera por defecto esta red
+
+### Host
+
+Todos los contenedores que estan en esta red, solo se pueden ver con el host principal
+
+### None
+
+Un contenedor que no tiene red
+
 # Volumenes
 
 # Docker Compose
